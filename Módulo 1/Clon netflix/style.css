@@ -1,0 +1,229 @@
+body{
+    margin:0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(20, 20, 20);
+}
+/* HEADER */
+    /* NAVBAR */
+header{
+    background-image: linear-gradient(rgba(20, 20, 20,0),rgba(20, 20, 20)), url(./Imágenes/Fondo\ spiderman.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size:cover;
+}
+.Encabezado{
+    width: 100%;
+    height: 123.384878vh;
+    display: flex;
+    flex-direction: row;
+}
+.barradenavegación{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    max-height: 11.1658vh;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    transition: all 0.6s ease;
+    z-index: 1;
+}
+.barradenavegación.active{
+    background: rgb(20, 20, 20);
+}
+.barradenavegación1{
+    display: flex;
+    flex-direction: row;
+    margin-left: 20px;
+    height: 100%;
+}
+.OpcionesPerfil{
+    background-color: transparent;
+    border: none;
+}
+.dropdown-menu{
+    background-color: rgba(0,0,0,0.9) !important;
+}
+.dropdown-item{
+    color: white !important;
+}
+.dropdown-item:hover{
+    color: black !important;
+}
+.logoNETFLIX{
+    display: flex;
+    flex-direction: column;
+    padding: 5px 5px;
+}
+.imagenlogodenetflix{
+    width: 92.5px;
+    height: 25 px;
+}
+.navbar{
+    margin: 5px;
+}
+.linksnavbar{
+    list-style: none;
+    display: inline;
+    text-decoration: none;
+    padding: 5px;
+    font-family: 'Netflix Sans','Helvetica Neue',Helvetica,Arial,sans-serif;
+    color: #fff;
+    font-size: 1.0248vw;
+}
+.linksnavbar:hover{
+    color: #b3b3b3;
+}
+.barradenavegación2{
+    display: flex;
+    flex-direction: row;
+    width: 207.25px;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: 20px;
+}
+    /* TÍTULO, DESCRIPCIÓN Y BOTONES */
+.TítuloDescripciónBotones{
+    width: 35.551464vw;
+    height: 81.211382vh;
+    margin-top: 100px;
+    margin-left: 20px;
+}
+.ImagenTítulo{
+    width: 100%;
+    height: 31.585365vh;
+    object-fit: contain;
+}
+.Descripción{
+    width: 100%;
+    height: 20.791382vh;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.4vw;
+    color: #fff;
+    font-weight: 400;
+    text-shadow:  2px 2px 4px rgba(0,0,0,.45);
+    margin-top: 15px;
+}
+.Botones{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.CajaBotones{
+    width: 12.7977vw;
+    height:  8.3186vh;
+    margin: 0px 7px;
+}
+.Botón1{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    color: black;
+    border: none;
+    padding: 0.5vw;
+    border-radius: 4px;
+    font-size: 1.2884vw;
+    width: 12.2352vw;
+    height: 6.6552vh;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+    line-height: 2.4rem;
+}
+.Botón2{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    background-color:rgba(109, 109, 110, 0.4);
+    color: white;
+    border-radius: 4px;
+    font-size: 1.2884vw;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+    width: 15.3645vw;
+    height: 6.6552vh;
+}
+/* MAIN */
+    /* MENUS DE PELÍCULAS */
+main{
+    background-color: rgb(20, 20, 20);
+}
+.MenúPelis1Completo{
+    display: flex;
+    flex-direction: column;
+    background-color:transparent;
+}
+.Favoritosdeayeryhoy{
+    color:#e5e5e5;
+    font-weight: 700;
+    font-size: 1.4vw;
+    font-family:'Open Sans', sans-serif;
+    margin: 1vw;
+}
+.MenúPelis1{
+    width: 100%;
+    position:none;
+}
+.TiradePelis{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+    height: 22.6016vh;
+}
+.ImagendePeli{
+    padding: 0 0.2vw;
+    width: 18.1705vw;
+    height: 22.2vh;
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+    object-fit: contain;
+    cursor: pointer;
+}
+/* FOOTER */
+footer{
+    background-color: rgb(20, 20, 20);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.RedesSociales{
+    width: 71.7423vw;
+    height: 4.8178vh;
+}
+.ImagenesRedesSociales{
+    cursor: pointer;
+}
+.TextoFooter{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: 1fr;
+    width: 71.7423vw;
+    height: 20.5528vh;
+    font-size: 13px;
+    color: grey;
+}
+div ul {
+    list-style: none;
+}
+.Ultimoslinks{
+    margin: 10px 0;
+}
+.Ultimoslinks:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+.NetflixInc{
+    color: grey;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 11px;
+    width: 71.7423vw;
+}

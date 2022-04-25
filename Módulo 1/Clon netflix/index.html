@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CLON DE NETFLIX</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Link google fonts -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet"> 
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+</head>
+<body>
+   <!-- A continuación está mi barra de navegación -->
+   <header>
+       <section class="Encabezado">
+        <nav class="barradenavegación">
+            <div class="barradenavegación1">
+                <div class="logoNETFLIX">
+                    <img class="imagenlogodenetflix" src="https://1000marcas.net/wp-content/uploads/2020/01/Logo-Netflix.png" alt="NETFLIX logo">
+                </div>
+                <ul class="navbar">
+                    <li class="linksnavbar"><a class="linksnavbar" href="#">Inicio</a></li>
+                    <li class="linksnavbar"><a class="linksnavbar" href="#">Series</a></li>
+                    <li class="linksnavbar"><a class="linksnavbar" href="#">Películas</a></li>
+                    <li class="linksnavbar"><a class="linksnavbar" href="#">Novedades populares</a></li>
+                    <li class="linksnavbar"><a class="linksnavbar" href="#">Mi lista</a></li>
+                </ul>
+            </div>
+            
+            <div class="barradenavegación2">
+                <!-- Logo de lupa -->
+                <img src="./Imágenes/Lupa.png" alt="">
+                <a class="linksnavbar" href="#">Niños</a></li>
+                <!-- Logo de campana -->
+                <img src="./Imágenes/Campana.png" alt="">
+                <!-- Logo de perfil personal (con un Dropdown de Bootstrap) -->
+                <div class="OpcionesPerfil">
+                  <button class="OpcionesPerfil" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                    <img src="./Imágenes/Perfil.png" alt="">
+                    <img src="./Imágenes/Flecha.png" alt="">
+                  </button>
+                  <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                    <li><a class="dropdown-item" href="#">Cuenta</a></li>
+                    <li><a class="dropdown-item" href="#">Centro de ayuda</a></li>
+                  </ul>
+                </div>
+            </div>
+        </nav>
+
+        <div class="TítuloDescripciónBotones">
+            <img class="ImagenTítulo" src="https://occ-0-29-987.1.nflxso.net/dnm/api/v6/tx1O544a9T7n8Z_G12qaboulQQE/AAAABYSUdQMZdISB5PPAdTsNDBXPsruioeykd6PticX26wpbSo7r-pC9vW4kbuk1lQwiPZhIvCu3Ey8QkSfRWzTc16nIO1LkVVEcaMQ.png?r=fcd" alt="Spider-man Nuevo Universo"> 
+            <div class="Descripción">
+                Después de que una araña radiactiva muerde a Miles Morales, un adolescente de Brooklyn, 
+                un  grupo de pares viene de otra dimensión para enseñarle a ser el Hombre Araña.
+            </div>
+            <div class="Botones">
+                <div class="CajaBotones">
+                    <button class="Botón1">
+                        <span class="material-icons">&#xe037;</span>
+                        Reproducir
+                    </button>
+                </div>
+                <div class="CajaBotones">
+                    <button class="Botón2">
+                        <span class="material-icons">&#xe88e;</span>
+                        Más información
+                    </button>
+                </div>
+            </div>
+        </div>
+       </section>
+
+       <!-- A continuación sigue mi primer menú desplegable de películas -->
+       <section class="MenúPelis1Completo">
+        <div class="Favoritosdeayeryhoy">
+            Favoritos de ayer y hoy
+        </div>
+        <div class="MenúPelis1">
+         <div id="Carrusel1" class="carousel slide" data-bs-ride="carousel">
+             <div class="carousel-inner">
+               <div class="carousel-item active">
+                 <div class="TiradePelis">
+                     <img class="ImagendePeli" src="./Imágenes/Película 1 The Amazing Spider-man 2.jpg" alt="The Amazing Spider-man 2">
+                     <img class="ImagendePeli" src="./Imágenes/Película 2 SuperCool.jpg" alt="SuperCool">
+                     <img class="ImagendePeli" src="./Imágenes/Película 3 Forrest Gump.jpg" alt="Forrest Gump">
+                     <img class="ImagendePeli" src="./Imágenes/Película 4 Shrek.jpg" alt="Shrek">
+                     <img class="ImagendePeli" src="./Imágenes/Película 5 Rudo y Cursi.jpg" alt="Rudo y Cursi">
+                 </div>
+               </div>
+               <div class="carousel-item">
+                 <!-- <img src="..." class="d-block w-100" alt="..."> -->
+                 <div class="TiradePelis">
+                     <img class="ImagendePeli" src="./Imágenes/Película 6 El hombre Araña 3.jpg" alt="El Hombre Araña 3">
+                     <img class="ImagendePeli" src="./Imágenes/Película 7 Baby.jpg" alt="Baby">
+                     <img class="ImagendePeli" src="./Imágenes/Película 8 La ley de Herodes.jpg" alt="La ley de Herodes">
+                     <img class="ImagendePeli" src="./Imágenes/Película 9 Volver al futuro.jpg" alt="Volver al futuro">
+                     <img class="ImagendePeli" src="./Imágenes/Película 10 Sí señor.jpg" alt="Sí señor">
+                 </div>
+               </div>
+             </div>
+             <button class="carousel-control-prev" type="button" data-bs-target="#Carrusel1" data-bs-slide="prev">
+               <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+               <span class="visually-hidden">Previous</span>
+             </button>
+             <button class="carousel-control-next" type="button" data-bs-target="#Carrusel1" data-bs-slide="next">
+               <span class="carousel-control-next-icon" aria-hidden="true"></span>
+               <span class="visually-hidden">Next</span>
+             </button>
+           </div>
+        </div>
+       </section>
+    </header>
+
+    <!-- A continuación va el cuerpo de la página -->
+    <main>
+        <section class="MenúPelis1Completo">
+          <div class="Favoritosdeayeryhoy">
+            Tendencias
+          </div>
+          <div class="MenúPelis1">
+            <div id="Carrusel2" class="carousel slide" data-bs-ride="carousel">
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <!-- <img src="..." class="d-block w-100" alt="..."> -->
+                  <div class="TiradePelis">
+                    <img class="ImagendePeli" src="./Imágenes/Película 11 Estamos muertos.jpg" alt="Estamos muertos">
+                    <img class="ImagendePeli" src="./Imágenes/Película 12 Better call Saul.jpg" alt="Better call Saul">
+                    <img class="ImagendePeli" src="./Imágenes/Película 13 Stranger things.jpg" alt="Stranger things">
+                    <img class="ImagendePeli" src="./Imágenes/Película 14 El infierno.jpg" alt="El infierno">
+                    <img class="ImagendePeli" src="./Imágenes/Película 15 Spider-man Nuevo universo.jpg" alt="Spider-man Nuevo universo">
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <!-- <img src="..." class="d-block w-100" alt="..."> -->
+                  <div class="TiradePelis">
+                    <img class="ImagendePeli" src="./Imágenes/Película 16 Peaky Blinders.jpg" alt="Peaky Blinders">
+                    <img class="ImagendePeli" src="./Imágenes/Película 17 Breaking Bad.jpg" alt="Breaking Bad">
+                    <img class="ImagendePeli" src="./Imágenes/Película 18 Club de cuervos.jpg" alt="Club de cuervos">
+                    <img class="ImagendePeli" src="./Imágenes/Película 19 Flash.jpg" alt="Flash">
+                    <img class="ImagendePeli" src="./Imágenes/Película 20 Amores perros.jpg" alt="Amores perros">
+                  </div>
+                </div>
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#Carrusel2" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#Carrusel2" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+          </div>
+
+        </section>
+
+        <section class="MenúPelis1Completo">
+            <div class="Favoritosdeayeryhoy">
+                Volver a verlo
+            </div>
+            <div class="MenúPelis1">
+             <div id="Carrusel3" class="carousel slide" data-bs-ride="carousel">
+                 <div class="carousel-inner">
+                   <div class="carousel-item active">
+                     <div class="TiradePelis">
+                         <img class="ImagendePeli" src="./Imágenes/Película 21 Son como niños.jpg" alt="Son como niños">
+                         <img class="ImagendePeli" src="./Imágenes/Película 22 Chicuarotes.jpg" alt="Chicuarotes">
+                         <img class="ImagendePeli" src="./Imágenes/Película 23 El juego del calamar.jpg" alt="El juego del calamar">
+                         <img class="ImagendePeli" src="./Imágenes/Película 24 Crónicas del taco.jpg" alt="Crónicas del taco">
+                         <img class="ImagendePeli" src="./Imágenes/Película 25 Kung Fu Panda.jpg" alt="Kung Fu Panda">
+                     </div>
+                   </div>
+                   <div class="carousel-item">
+                     <!-- <img src="..." class="d-block w-100" alt="..."> -->
+                     <div class="TiradePelis">
+                         <img class="ImagendePeli" src="./Imágenes/Película 26 El Hombre Araña.jpg" alt="El Hombre Araña">
+                         <img class="ImagendePeli" src="./Imágenes/Película 27 1922.jpg" alt="1922">
+                         <img class="ImagendePeli" src="./Imágenes/Película 28 Misión rescate.jpg" alt="Misión Rescate">
+                         <img class="ImagendePeli" src="./Imágenes/Película 29 Adam.jpg" alt="Proyecto Adam">
+                         <img class="ImagendePeli" src="./Imágenes/Película 30 No miren arriba.jpg" alt="No miren arriba">
+                     </div>
+                   </div>
+                 </div>
+                 <button class="carousel-control-prev" type="button" data-bs-target="#Carrusel3" data-bs-slide="prev">
+                   <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                   <span class="visually-hidden">Previous</span>
+                 </button>
+                 <button class="carousel-control-next" type="button" data-bs-target="#Carrusel3" data-bs-slide="next">
+                   <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                   <span class="visually-hidden">Next</span>
+                 </button>
+               </div>
+            </div>
+           </section>
+    </main>
+
+    <footer>
+        <section class="Piedepágina">
+            <div class="RedesSociales">
+                <img class="ImagenesRedesSociales" src="./Imágenes/Logo de FB.png" alt="Facebook" width="50px" height="40px">
+                <img class="ImagenesRedesSociales" src="./Imágenes/Logo de Insta.png" alt="Instagram" width="30px" height="30px">
+                <img class="ImagenesRedesSociales" src="./Imágenes/Logo de Twitter.png" alt="Twitter" width="40px" height="40px">
+                <img class="ImagenesRedesSociales" src="./Imágenes/Logo Youtube.png" alt="Youtube" width="40px" height="40px">
+            </div>
+            <div class="TextoFooter">
+                <div>
+                    <ul>
+                        <li class="Ultimoslinks">Audio y subtítulos</li>
+                        <li class="Ultimoslinks">Prensa</li>
+                        <li class="Ultimoslinks">Privacidad</li>
+                        <li class="Ultimoslinks">Contáctanos</li>
+                    </ul>
+                </div>
+                <div>
+                    <ul>
+                        <li class="Ultimoslinks">Audio descriptivo</li>
+                        <li class="Ultimoslinks">Relaciones con inversionistas</li>
+                        <li class="Ultimoslinks">Avisos legales</li>
+                    </ul>
+                </div>
+                <div>
+                    <ul>
+                        <li class="Ultimoslinks">Centro de ayuda</li>
+                        <li class="Ultimoslinks">Empleo</li>
+                        <li class="Ultimoslinks">Preferencias de cookies</li>
+                    </ul>
+                </div>
+                <div>
+                    <ul>
+                        <li class="Ultimoslinks">Tarjetas de regalo</li>
+                        <li class="Ultimoslinks">Términos de uso</li>
+                        <li class="Ultimoslinks">Información corporativa</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="NetflixInc">
+              © 1997-2022 Netflix, Inc.
+            </div>
+        </section>
+    </footer>
+
+    <!-- Link para el javascript para el menu -->
+    <script src="menu.js"></script>
+    <!-- Links para el java de bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+</body>
+</html>

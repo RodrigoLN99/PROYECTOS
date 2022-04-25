@@ -1,0 +1,154 @@
+body{
+    background-color: #202124;
+    padding: 0;
+    margin: 0;
+}
+.cajaheader{
+    background-color:transparent;
+    font-family: arial,sans-serif;
+    display:flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+}
+.caja1{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: 1;
+    align-items: center;
+    text-align: center;
+    color:white;
+    width: 267px;
+    height: 48px;
+}
+.cajadegmailimágeneseimagenpersonal{
+}
+.links{
+    text-decoration: none;
+    color: white;
+    font-size: 14px;
+    font-family: Arial, sans-serif;
+}
+.cajamain{
+    background-color:transparent;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.imagendegoogle{
+    text-align: center;
+    max-width: 272px;
+    max-height: 92px;
+}
+.barradebusqueda{
+    border: 1px solid #5f6368;
+    display: grid;
+    grid-template-columns: 10% 90%;
+    border-radius: 24px;
+    height: 46px;
+    width: 42.75vw;
+    margin: 40px;
+}
+.lupadelabarradebusqueda{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.barradelabarradebusqueda{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.barrainput{
+    width: 100%;
+    height: 100%;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    color: #e8eaed;
+    font-size: 16px;
+    font-family: Arial, sans-serif;
+}
+.botonesdebusqueda{
+    padding: 10px 20px;
+}
+.botones{
+    background-color: #303134;
+    border: 1px solid #303134;
+    border-radius: 4px;
+    color: #e8eaed;
+    font-family: arial,sans-serif;
+    font-size: 14px;
+    margin: 11px 4px;
+    padding: 0 16px;
+    height: 36px;
+    min-width: 54px;
+    cursor: pointer;
+}
+.ofrecidoporgoogle{
+    font-family: Arial, sans-serif;
+    color: #bdc1c6;
+    font-size: 14px;
+}
+.linkofrecidoporgoogle{
+    color: #8ab4f8;
+    font-size: 14px;
+    font-family: Arial, sans-serif;
+    text-decoration: none;
+}
+.piedepágina{
+    display: grid;
+    grid-template-columns: 1;
+    grid-template-rows: repeat(2, 1fr);
+    width: 100%;
+    height: 96px;
+    bottom:0;
+    position:absolute;
+    background-color: #171717;
+}
+@media screen and (max-height:515px) {
+    .piedepágina{
+        display: grid;
+        grid-template-columns: 1;
+        grid-template-rows: repeat(2, 1fr);
+        width: 100%;
+        height: 96px;
+        position: relative;
+    }
+}
+.piedepágina1{
+    color: #999da2;
+    font-family: arial,sans-serif;
+    font-size: 14px;
+    padding: 15px;
+}
+.piedepágina2{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+@media screen and (max-width: 840px) {
+    .piedepágina2{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+.parte1{
+    display: flex;
+    flex-direction: row;
+}
+.linksparte1y2{
+    color: #999da2;
+    font-family: arial,sans-serif;
+    font-size: 14px;
+    padding: 15px;
+    text-decoration: none
+}
+.parte2{
+    display: flex;
+    flex-direction: row;
+}
+

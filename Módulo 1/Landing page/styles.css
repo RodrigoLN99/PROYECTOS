@@ -1,0 +1,34 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: aqua;
+    padding: 0;
+    margin: 0;
+}
+.sección1navbar{
+    width: 100%;
+    height: 100vh;
+    border: solid 1px black;
+}
+.navbar{
+    border: solid 1px white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+.imagenmicrosoft{
+    height:23px;
+    width:108px;
+    max-width: none;
+    margin-top: -3px;
+}
+.imagenxbox{
+    height: 22px;
+    width: 75px;
+    max-width: none;
+    margin-top: -3px;
+}
